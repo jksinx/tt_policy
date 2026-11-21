@@ -3,174 +3,174 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy - Catchamon</title>
+<title>Privacy Policy - Drive Away</title>
 <style>
   :root {
-    --bg: #f5f6fa;
+    --bg: #f5f7fa;
     --card: #ffffff;
-    --text: #1f2430;
-    --muted: #6b7280;
-    --accent: #5b6ef5;
-    --accent-soft: #eef0ff;
-    --border: #e5e7eb;
+    --text: #1f2733;
+    --text-light: #5b6675;
+    --primary: #2f6fed;
+    --border: #e3e8ef;
+    --radius: 14px;
   }
+
   * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
   body {
     margin: 0;
+    padding: 24px 16px 64px;
     background: var(--bg);
     color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
-    line-height: 1.75;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+                 "PingFang SC", "Microsoft YaHei", Roboto, Arial, sans-serif;
     font-size: 16px;
-    -webkit-font-smoothing: antialiased;
+    line-height: 1.75;
   }
-  .header {
-    background: linear-gradient(135deg, #5b6ef5 0%, #8a5cf6 100%);
-    color: #fff;
-    padding: 56px 20px 48px;
-    text-align: center;
-  }
-  .header h1 {
-    margin: 0 0 8px;
-    font-size: 32px;
-    letter-spacing: 0.5px;
-    font-weight: 700;
-  }
-  .header .subtitle {
-    margin: 0;
-    opacity: 0.92;
-    font-size: 15px;
-  }
-  .header .meta {
-    margin-top: 18px;
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    font-size: 13px;
-  }
-  .header .meta span {
-    background: rgba(255, 255, 255, 0.16);
-    border: 1px solid rgba(255, 255, 255, 0.28);
-    border-radius: 999px;
-    padding: 5px 14px;
-  }
-  .wrapper {
-    max-width: 860px;
-    margin: -28px auto 64px;
-    padding: 0 20px;
-  }
-  .card {
+
+  .container {
+    max-width: 820px;
+    margin: 0 auto;
     background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 36px 40px 44px;
-    box-shadow: 0 10px 40px rgba(31, 36, 48, 0.06);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 24px rgba(31, 39, 51, 0.06);
+    padding: 40px 36px 48px;
   }
-  h2 {
-    font-size: 20px;
-    margin: 40px 0 14px;
-    padding-left: 14px;
-    border-left: 4px solid var(--accent);
-    line-height: 1.4;
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 24px;
+    margin-bottom: 28px;
   }
-  h2:first-of-type { margin-top: 0; }
-  h3 {
-    font-size: 17px;
-    margin: 26px 0 10px;
+
+  h1 {
+    font-size: 28px;
+    line-height: 1.35;
+    margin: 0 0 10px;
     color: var(--text);
   }
+
+  .subtitle {
+    font-size: 17px;
+    color: var(--text-light);
+    margin: 0 0 14px;
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    font-size: 14px;
+    color: var(--text-light);
+  }
+
+  .meta span { white-space: nowrap; }
+
+  h2 {
+    font-size: 20px;
+    margin: 36px 0 14px;
+    padding-left: 12px;
+    border-left: 4px solid var(--primary);
+    line-height: 1.4;
+  }
+
+  h3 {
+    font-size: 17px;
+    margin: 24px 0 10px;
+    color: var(--text);
+  }
+
   p { margin: 0 0 14px; }
+
   ul {
     margin: 0 0 16px;
     padding-left: 22px;
   }
+
   li { margin-bottom: 6px; }
-  .lead {
-    font-size: 16px;
-    color: var(--muted);
-    background: var(--accent-soft);
-    border-radius: 10px;
-    padding: 16px 18px;
-    margin-bottom: 26px;
+
+  .note {
+    background: #f0f5ff;
+    border-left: 4px solid var(--primary);
+    border-radius: 0 8px 8px 0;
+    padding: 14px 16px;
+    margin: 18px 0;
+    font-size: 15px;
+    color: var(--text-light);
   }
+
+  .table-wrap {
+    overflow-x: auto;
+    margin: 16px 0 20px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+  }
+
   table {
     width: 100%;
     border-collapse: collapse;
-    margin: 8px 0 20px;
-    font-size: 14px;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    overflow: hidden;
+    font-size: 15px;
+    min-width: 560px;
   }
-  th, td {
-    border: 1px solid var(--border);
-    padding: 10px 12px;
+
+  thead th {
+    background: #f2f6fd;
     text-align: left;
-    vertical-align: top;
-  }
-  th {
-    background: #f7f8fc;
     font-weight: 600;
+    color: var(--text);
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border);
     white-space: nowrap;
   }
-  .note {
-    background: #fff8e6;
-    border-left: 4px solid #f0b429;
-    padding: 14px 18px;
-    border-radius: 0 8px 8px 0;
-    margin: 16px 0 20px;
-    font-size: 14.5px;
+
+  tbody td {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    color: var(--text-light);
   }
-  .contact {
-    background: #f7f8fc;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 16px 18px;
-    margin-top: 12px;
-  }
-  .contact a {
-    color: var(--accent);
-    text-decoration: none;
-    font-weight: 600;
-  }
-  .contact a:hover { text-decoration: underline; }
+
+  tbody tr:last-child td { border-bottom: none; }
+
+  tbody td:first-child { color: var(--text); font-weight: 500; }
+
   footer {
-    text-align: center;
-    color: var(--muted);
-    font-size: 13px;
-    padding: 0 20px 48px;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 14px;
+    color: var(--text-light);
   }
-  @media (max-width: 640px) {
-    .card { padding: 26px 20px 32px; }
-    .header { padding: 44px 16px 40px; }
-    .header h1 { font-size: 26px; }
-    table { font-size: 13px; }
-    th, td { padding: 8px 9px; }
+
+  a { color: var(--primary); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    body { padding: 0 0 40px; font-size: 15px; }
+    .container { border-radius: 0; padding: 28px 20px 36px; box-shadow: none; }
+    h1 { font-size: 23px; }
+    h2 { font-size: 18px; }
   }
 </style>
 </head>
 <body>
-
-<header class="header">
-  <h1>Privacy Policy</h1>
-  <p class="subtitle">Catchamon (hereinafter referred to as "this Game")</p>
-  <div class="meta">
-    <span>Last Updated: November 18, 2026</span>
-    <span>Effective Date: November 18, 2026</span>
-  </div>
-</header>
-
-<main class="wrapper">
-  <article class="card">
+  <main class="container">
+    <header>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">Drive Away (hereinafter referred to as "this Game")</p>
+      <div class="meta">
+        <span>Last Updated: November 21, 2026</span>
+        <span>Effective Date: November 21, 2026</span>
+      </div>
+    </header>
 
     <h2>Introduction</h2>
-    <p>Welcome to "Catchamon" and its related services!</p>
+    <p>Welcome to "Drive Away" and its related services!</p>
     <p>We ([TT BULLET PTE. LTD.]; hereinafter referred to as "the Company") recognize the importance of your personal information and highly value the trust you place in us. We are committed to protecting your personal information and privacy in accordance with applicable laws and industry best practices.</p>
     <p>We have established this Privacy Policy (hereinafter referred to as "this Policy"). Please read this Policy carefully to ensure you understand its contents and can make informed decisions before using this Game and its related services.</p>
-
-    <p class="lead">This Policy is intended to help you understand the following:</p>
+    <p>This Policy is intended to help you understand the following:</p>
     <ul>
       <li>How we collect and use personal information</li>
       <li>How we use cookies and similar technologies</li>
@@ -193,40 +193,41 @@
 
     <h3>1.2 Information Collected Automatically</h3>
     <p>When you use this Game, we may automatically collect the following information:</p>
-    <table>
-      <thead>
-        <tr>
-          <th>Type of Information</th>
-          <th>Specific Content</th>
-          <th>Purpose of Use</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Device Information</td>
-          <td>Device model, OS version, device identifiers (e.g., Android ID, OAID), IP address</td>
-          <td>Game operation, security risk management, device compatibility adjustment</td>
-        </tr>
-        <tr>
-          <td>Game Behavior Data</td>
-          <td>Game level completion status, playtime, click behavior</td>
-          <td>Game experience optimization, game balance analysis</td>
-        </tr>
-        <tr>
-          <td>Network Information</td>
-          <td>Network type, carrier information</td>
-          <td>Loading game resources, network connection optimization</td>
-        </tr>
-        <tr>
-          <td>Log Information</td>
-          <td>Service logs, crash reports</td>
-          <td>Troubleshooting, performance optimization</td>
-        </tr>
-      </tbody>
-    </table>
-
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Type of Information</th>
+            <th>Specific Content</th>
+            <th>Purpose of Use</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Device Information</td>
+            <td>Device model, OS version, device identifiers (e.g., Android ID, OAID), IP address</td>
+            <td>Game operation, security risk management, device compatibility adjustment</td>
+          </tr>
+          <tr>
+            <td>Game Behavior Data</td>
+            <td>Game level completion status, playtime, click behavior</td>
+            <td>Game experience optimization, game balance analysis</td>
+          </tr>
+          <tr>
+            <td>Network Information</td>
+            <td>Network type, carrier information</td>
+            <td>Loading game resources, network connection optimization</td>
+          </tr>
+          <tr>
+            <td>Log Information</td>
+            <td>Service logs, crash reports</td>
+            <td>Troubleshooting, performance optimization</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <div class="note">
-      <strong>Note:</strong> This game is a puzzle mini-game; we do not collect your name, phone number, email address, contact details, precise location data, photo albums, camera access, microphone access, or other highly sensitive personal information. Should we implement feature changes in the future that involve collecting the aforementioned information, we will obtain your explicit consent separately.
+      This game is a puzzle mini-game; we do not collect your name, phone number, email address, contact details, precise location data, photo albums, camera access, microphone access, or other highly sensitive personal information. Should we implement feature changes in the future that involve collecting the aforementioned information, we will obtain your explicit consent separately.
     </div>
 
     <h3>1.3 Information Provided by the TikTok Mini-Game Platform</h3>
@@ -244,40 +245,42 @@
 
     <h3>3.1 Third-Party SDKs</h3>
     <p>This game may integrate the following third-party SDKs (Software Development Kits) to enable specific functions:</p>
-    <table>
-      <thead>
-        <tr>
-          <th>SDK Name</th>
-          <th>Provider</th>
-          <th>Information</th>
-          <th>Type</th>
-          <th>Purpose of Use</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>TikTok Mini-Game SDK</td>
-          <td>TikTok (ByteDance)</td>
-          <td>Device information, platform account information</td>
-          <td>Platform functions</td>
-          <td>Game login, sidebar, and desktop shortcuts</td>
-        </tr>
-        <tr>
-          <td>Advertising SDK (if applicable)</td>
-          <td>Third-party advertising platforms</td>
-          <td>Device identifiers, IP address</td>
-          <td>Advertising</td>
-          <td>Display of advertising content</td>
-        </tr>
-        <tr>
-          <td>Payment SDK (if applicable)</td>
-          <td>App Store / Google Play</td>
-          <td>Transaction information (processed by the platform)</td>
-          <td>Payment</td>
-          <td>Processing of in-app purchases</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>SDK Name</th>
+            <th>Provider</th>
+            <th>Information Collected</th>
+            <th>Type</th>
+            <th>Purpose of Use</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>TikTok Mini-Game SDK</td>
+            <td>TikTok (ByteDance)</td>
+            <td>Device information, platform account information</td>
+            <td>SDK</td>
+            <td>Platform functions such as game login, sidebar, and desktop shortcuts</td>
+          </tr>
+          <tr>
+            <td>Advertising SDK (if applicable)</td>
+            <td>Third-party advertising platforms</td>
+            <td>Device identifiers, IP address</td>
+            <td>SDK</td>
+            <td>Display of advertising content</td>
+          </tr>
+          <tr>
+            <td>Payment SDK (if applicable)</td>
+            <td>App Store / Google Play</td>
+            <td>Transaction information (processed by the platform)</td>
+            <td>SDK</td>
+            <td>Processing of in-app purchases</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <p>We recommend that you review the privacy policy of each SDK before integrating third-party SDKs. We also provide detailed disclosures regarding these SDKs in this policy.</p>
 
     <h3>3.2 Information Sharing</h3>
@@ -354,17 +357,12 @@
 
     <h2>VIII. Contact Information</h2>
     <p>If you have any questions, comments, or suggestions regarding this Policy or the protection of personal information, please contact us using the following method:</p>
-    <div class="contact">
-      Email address: <a href="mailto:xyp@ttbullet.com">xyp@ttbullet.com</a>
-    </div>
-    <p style="margin-top:16px;">We will promptly review your inquiry and provide a response within the timeframe stipulated by law.</p>
+    <p>Email address: <a href="mailto:xyp@ttbullet.com">xyp@ttbullet.com</a></p>
+    <p>We will promptly review your inquiry and provide a response within the timeframe stipulated by law.</p>
 
-  </article>
-</main>
-
-<footer>
-  &copy; 2026 TT BULLET PTE. LTD. All rights reserved.
-</footer>
-
+    <footer>
+      &copy; 2026 TT BULLET PTE. LTD. All rights reserved.
+    </footer>
+  </main>
 </body>
 </html>
